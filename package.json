@@ -1,0 +1,32 @@
+{
+    "name": "neta-lang",
+    "displayName": "neta",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "NeoClear",
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "neta",
+            "aliases": ["neta", "neta"],
+            "extensions": ["neta"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "neta",
+            "scopeName": "source.neta",
+            "path": "./syntaxes/neta.tmLanguage.json"
+        }],
+        "snippets": [
+            {
+              "language": "neta",
+              "path": "./snippets/neta.json"
+            }
+          ]
+    }
+}

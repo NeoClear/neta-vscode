@@ -1,0 +1,61 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "neta",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.neta",
+					"match": ";.*$"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.neta",
+				"match": "\\b(if|while|assign|prog|\\!|import|type|istype)\\b"
+			}, {
+				"name": "entity.name.function.neta",
+					"match": "\\b(fun|setf|setc|setl|undef|print|println|read|readln|equal|parse|strcmp|strlen)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.neta",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.neta",
+					"match": "\\\\."
+				}
+			]
+		},
+		"types": {
+			"patterns": [
+				{
+					"name": "entity.name.type.neta",
+					"match": "\\b('int|'float|'string|'char)\\b"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.language.boolean.neta",
+					"match": "\\b(true|false|yes|no)\\b"}
+			]
+		}
+	},
+	"scopeName": "source.neta"
+}
