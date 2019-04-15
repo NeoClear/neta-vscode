@@ -2,210 +2,210 @@
     "fun": {
         "prefix": "fun",
         "body": [
-            "(fun ${1:name} (${2:param}) {",
+            "fun ${1:name} (${2:param}) {",
             "\t${3:body}",
-            "})"
+            "}"
         ],
         "description": "fun"
     }, "undef": {
         "prefix": "undef",
         "body": [
-            "(undef ${1:id}"
+            "undef ${1:id}"
         ],
         "description": "undef"
     }, "setf": {
         "prefix": "setf",
         "body": [
-            "(setf (${1:id})"
+            "setf (${1:id}"
         ],
         "description": "setf"
     }, "setc": {
         "prefix": "setc",
         "body": [
-            "(setc (${1:id})"
+            "setc (${1:id}"
         ],
         "description": "setc"
     }, "setl": {
         "prefix": "setl",
         "body": [
-            "(setl (${1:id})"
+            "setl (${1:id}"
         ],
         "description": "setl"
     }, "if": {
         "prefix": "if",
         "body": [
-            "(if ${1:expr}",
+            "if ${1:expr}",
             "\t${2:expr}",
-            "\t${3:expr})"
+            "\t${3:expr}"
         ],
         "description": "if"
     }, "while": {
         "prefix": "while",
         "body": [
-            "(while ${1:expr}",
-            "\t${2:expr})"
+            "while ${1:expr}",
+            "\t${2:expr}"
         ],
         "description": "while"
     }, "import": {
         "prefix": "import",
         "body": [
-            "(import \"${1:expr}\")"
+            "import \"${1:expr}\""
         ],
         "description": "import"
     }, "assign": {
         "prefix": "assign",
         "body": [
-            "(-> (${1:expr}))"
+            "-> (${1:expr}"
         ],
         "description": "assign"
     }, "print": {
         "prefix": "print",
         "body": [
-            "(print ${1:expr})"
+            "print ${1:expr}"
         ],
         "description": "print"
     }, "println": {
         "prefix": "println",
         "body": [
-            "(println ${1:expr})"
+            "println ${1:expr}"
         ],
         "description": "println"
     }, "read": {
         "prefix": "read",
         "body": [
-            "(read)"
+            "read"
         ],
         "description": "read"
     }, "readln": {
         "prefix": "readln",
         "body": [
-            "(readln)"
+            "readln"
         ],
         "description": "readln"
     }, "parse": {
         "prefix": "parse",
         "body": [
-            "(parse ${1:expr})"
+            "parse ${1:expr}"
         ],
         "description": "parse"
     }, "equal": {
         "prefix": "equal",
         "body": [
-            "(equal ${1:expr} ${2:expr})"
+            "equal ${1:expr} ${2:expr}"
         ],
         "description": "equal"
     }, "strlen": {
         "prefix": "strlen",
         "body": [
-            "(strlen ${1:str})"
+            "strlen ${1:str}"
         ],
         "description": "strlen"
     }, "strcmp": {
         "prefix": "strcmp",
         "body": [
-            "(strcmp ${1:str} ${2:str})"
+            "strcmp ${1:str} ${2:str}"
         ],
         "description": "strcmp"
     }, "type": {
         "prefix": "type",
         "body": [
-            "(type ${1:expr})"
+            "type ${1:expr}"
         ],
         "description": "type"
     }, "istype": {
         "prefix": "istype",
         "body": [
-            "(istype ${1:expr} ${2:symbol})"
+            "istype ${1:expr} ${2:symbol}"
         ],
         "description": "istype"
     }, "sin": {
         "prefix": "sin",
         "body": [
-            "(sin ${1:value})"
+            "sin ${1:value}"
         ],
         "description": "sin"
     }, "cos": {
         "prefix": "cos",
         "body": [
-            "(cos ${1:value})"
+            "cos ${1:value}"
         ],
         "description": "cos"
     }, "tan": {
         "prefix": "tan",
         "body": [
-            "(tan ${1:value})"
+            "tan ${1:value}"
         ],
         "description": "tan"
     }, "sec": {
         "prefix": "sec",
         "body": [
-            "(sec ${1:value})"
+            "sec ${1:value}"
         ],
         "description": "sec"
     }, "csc": {
         "prefix": "csc",
         "body": [
-            "(csc ${1:value})"
+            "csc ${1:value}"
         ],
         "description": "csc"
     }, "cot": {
         "prefix": "cot",
         "body": [
-            "(cot ${1:value})"
+            "cot ${1:value}"
         ],
         "description": "cot"
     }, "mod": {
         "prefix": "mod",
         "body": [
-            "(mod ${1:value})"
+            "mod ${1:value}"
         ],
         "description": "mod"
     }, "qpower": {
         "prefix": "qpower",
         "body": [
-            "(qpower ${1:base} ${2:time})"
+            "qpower ${1:base} ${2:time}"
         ],
         "description": "qpower"
     }, "gcd": {
         "prefix": "gcd",
         "body": [
-            "(gcd ${1:a} ${2:b})"
+            "gcd ${1:a} ${2:b}"
         ],
         "description": "gcd"
     }, "sqrt": {
         "prefix": "sqrt",
         "body": [
-            "(sqrt ${1:value})"
+            "sqrt ${1:value}"
         ],
         "description": "sqrt"
     }, "fact": {
         "prefix": "fact",
         "body": [
-            "(fact ${1:value})"
+            "fact ${1:value}"
         ],
         "description": "fact"
     }, "rev": {
         "prefix": "rev",
         "body": [
-            "(rev ${1:value})"
+            "rev ${1:value}"
         ],
         "description": "rev"
     }, "angle-cut": {
         "prefix": "angle-cut",
         "body": [
-            "(angle-cut ${1:angle})"
+            "angle-cut ${1:angle}"
         ],
         "description": "angle-cut"
     }, "qmod": {
         "prefix": "qmod",
         "body": [
-            "(qmod ${1:base} ${2:time} ${3:mod})"
+            "qmod ${1:base} ${2:time} ${3:mod}"
         ],
         "description": "qmod"
     }, "fermat-check": {
         "prefix": "fermat-check",
         "body": [
-            "(fermat-check ${1:num})"
+            "fermat-check ${1:num}"
         ],
         "description": "fermat-check"
     }
